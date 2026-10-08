@@ -5,6 +5,7 @@ from . import app, db
 from .forms import OpinionForm
 from .models import Opinion
 
+
 @app.route('/')
 def index_view():
     quantity = Opinion.query.count()
